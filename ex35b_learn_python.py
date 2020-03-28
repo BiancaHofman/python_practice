@@ -1,6 +1,6 @@
 from sys import exit 
 
-#I changed the script ex35.py to create the script ex35b.py. Below you'll find a overview of the changes I made. 
+#I changed the script ex35 to create the script ex35b.py. Below you'll find a overview of the changes I made. 
 
 #Changes in order of functions  
                               #---> I changed the order of the various functions a bit, to make the code easier to read. For example, the function start() is now in the beginning and not in the end.
