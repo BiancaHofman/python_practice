@@ -1,0 +1,267 @@
+
+<start>
+{user_name}, it's 02.43 AM and you are awake.
+The early birds are still sleeping!
+Do you stay in bed?
+
+
+
+<start_yes>
+You stay in bed, but you'll be staring at the ceiling until your alarm goes off.
+
+
+<start_no>
+You shuffle to your bedroom door.
+Do you go to the the kitchen or the bathroom?
+
+
+<start_else>
+Just keep it simple and answer yes or no.
+
+<start_yes_else>
+Just choose bathroom or kitchen.
+
+
+
+<start_user_input> ---> not case sensitive
+Yeah
+Yes
+Yes, stay in bed
+No
+
+{other input} ------> <start_else>
+
+<start_user_input_yes> ---> not case sensitive
+Kitchen
+Go to kitchen
+Got to the kitchen
+Bathroom
+Go to Bathroom
+Go to the bathroom
+
+{other input}  ------> <start_else_nested>
+
+
+
+<kitchen>
+You're in the kitchen.
+There is a delicious pie in the fridge.") 
+Mmmm, nothing beats a midnight snack!")
+Or...maybe you shouldn't eat pie and drink some rooibos tea instead.
+What do you prefer: rooibos or pie?
+
+<kitchen_pie>
+That pie was delicious
+Now back to bed!") 
+...wait...what's that sound?")   
+Is that the attic floor creaking?") 
+Footsteps? 
+Nooo, that's must be your imagination.")
+Or not? 
+Do you go back to bed or do you go to the attic?
+
+<kitchen_rooibos>
+Rooibos is a herbal tea from South Africa.
+Some say it helps to improve sleep. 
+Not sure if that's true.
+But it seems to work for you.
+Sweet dreams!
+
+<kitchen_else>
+Just say Rooibos or pie
+
+<kitchen_pie_attic>
+#no copy, straight to function attic
+
+
+<kitchen_pie_bed>
+#no copy, straight to function insomnia_wins
+
+
+<kitchen_pie_else>
+Just answer bed or attic
+
+<kitchen_user_input> ---> not case sensitive
+pie
+rooibos
+
+{other input} ------> <kitchen_else>
+
+ 
+ 
+<kitchen_user_input_pie> ---> not case sensitive
+Attic
+Go to attic
+Bed
+Go back to bed
+
+
+{other input} ------> <kitchen_pie_else>
+
+ 
+ 
+<bathroom>  
+You are in the bathroom.
+You've just flushed the toilet when you hear something falling.
+The cat is probably climbing the bookshelves again.
+Do you want to check out what your cat has done?
+
+<bathroom_yes>
+Okay let's go to the living room.
+
+<bathroom_no>
+Okay
+Yeah, you might be right.
+It's way too early to check out what the cat is doing.
+It's time to sleep.
+
+<bathroom_else>
+Just answer yes or no. Otherwise you'll be stuck in the bathroom all night.
+
+
+<bathroom_user_input> ---> not case sensitive
+yes
+no
+{other input} ---> <bathroom_else>
+
+
+<attic>
+A cold breeze on the attic makes your hair stand on end.
+The dusty rocking chair next to the window starts to rock back and forth.
+A thin voice whispers: {user_name}, {user_name}...
+...{user_name}, this is your granny!
+Come here. Do you want to hear a story?")
+Suddenly, another voice starts to speak: Don't listen to her, {user_name}... 
+ ...that woman is not your grandmother...
+ ...please, listen to me, {user_name}, I'm your grandfather.
+Your grandparents? Ghosts? This is getting freaky! 
+What do you do? 
+Flee or listen? 
+
+
+<attic_flee>    
+You run down the stairs and jump back into your bed.
+In bed you try to convince yourself this was just your imagination.
+You'll be staring at the ceiling until your alarm goes off.   
+
+
+<attic_listen>
+Do you want to listen to your grandfather or your grandmother?
+
+<attic_else>
+Just answer flee or listen, if you don't want to be stuck in this attic forever.
+
+<attic_listen_grandmother>
+The creepy voice starts to recite a poem.
+---------------------------------------------- 
+ txt.read()
+---------------------------------------------- 
+This was not your beloved granny.
+This was the ghost assistant of Insomnia reciting a scary poem.")
+She helps Insomnia by keeping people awake.")       
+You run down the stairs...
+...and jump into your bed. 
+You'll be staring at the ceiling until you alarm goes off. 
+And you'll get up on the wrong side of the bed.        
+            
+
+<attic_listen_grandfather>
+Your grandfather was a lovely man and you have to admit he's a friendly ghost.") 
+His story bores you to sleep, though...
+...and the other creepy voice disappeared.
+
+
+<attic_listen_else>
+Just answer granny or grandfather or you'll be stuck in this attic forever.
+
+
+<attic_user_input>
+flee 
+listen
+
+{other input} ---> <attic_else>
+
+<attic_user_input_listen>  ---> not case sensitive
+Grandmother
+Listen to grandmother
+Grandfather
+Listen to grandfather
+
+
+
+{other input} ---> <attic_listen_else>
+
+
+
+<living_room>
+Yes, it was the cat again.
+He is hiding behind a plant on the top shelf.
+And some of your books fell on the floor.")
+Do you pick up the books?
+Or do you go to the garden to get some fresh air? 
+
+<living_room_books>
+Your cat dropped the book 'Bedtime stories for stressed out Adults' on the floor.")
+'Tales to soothe tired souls' it says, by Lucy Mangan")
+Wow. You didn't remember you had that book.")
+You take it and you go back to bed. Thanks cat!
+
+<living_room_garden>
+No copy, straight to function: garden()  
+
+<living_room_else>
+Just answer garden or books, if you don't want to be stuck in the living room forever.
+
+
+<living_room_user_input>  ---> not case sensitive
+Garden
+Go to garden
+Go to the garden
+Books
+Pick up books
+Pick up the books
+
+{other input} ---> <if_living_room_else>
+
+<garden>
+Your crazy neighbour is walking in your garden with a flashlight.
+Do you ignore the man or talk to him?    
+
+
+<garden_ignore>
+You ignore him.
+The man is crazy but harmless.
+Last week he saw aliens on your roof terrace. 
+He'll go back to his own place, when he gets tired.
+You'll go back to bed for a bit more sleep. 
+
+<garden_talk>
+You ask your neighbour what he's doing in your garden, in the middle of the night.
+The man is crazy, but harmless.
+Last week he saw ghosts on your roof terrace. 
+{user_name}, this night I've seen a man and a woman staring through your attic's window!', he says.") 
+Pfff. You explain your neighbour that there is nobody else in the house apart from you.")
+But back in bed, you start to get a bit nervous, though.
+What if your neighbour is not crazy...
+
+<garden_else>
+Just answer talk or ignore, if you don't want to be stuck in the garden forever.
+
+<garden_user_input>
+Ignore
+Ignore the man
+Ignore him
+Talk
+Talk to him
+
+{other input} ---> <garden_else>
+
+
+<sleep_exit>
+You'll sleep like a baby. Insomnia lost. You won! THE END
+
+
+<insomnia_wins>
+Insomnia wins. You lose. GAME OVER
+
+

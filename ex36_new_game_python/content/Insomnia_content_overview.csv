@@ -1,0 +1,136 @@
+Title,Content,Type,Function
+start,"{user_name}, it's 02.43 AM and you are awake.
+The early birds are still sleeping!
+Do you stay in bed?",story_line,start
+start_yes,"You stay in bed, but you'll be staring at the ceiling until your alarm goes off.",story_line,start
+start_no,"You shuffle to your bedroom door.
+Do you go to the the kitchen or the bathroom?",story_line,start
+start_else,Just keep it simple and answer yes or no.,story_line,start
+start_no_else,Just choose bathroom or kitchen.,story_line,start
+start_no_kitchen,0,story_line,start
+start_no_bathroom,0,story_line,start
+start_user_input_1,Yeah,user_input,start
+start_user_input_2,Yes,user_input,start
+start_user_input_3,"Yes, stay in bed",user_input,start
+start_user_input_4,No,user_input,start
+start_user_input_no_1,Kitchen,user_input,start
+start_user_input_no_2,Go to kitchen,user_input,start
+start_user_input_no_3,Got to the kitchen,user_input,start
+start_user_input_no_4,Bathroom,user_input,start
+start_user_input_no_5,Go to Bathroom,user_input,start
+start_user_input_no_6,Go to the bathroom,user_input,start
+kitchen,"You're in the kitchen.
+There is a delicious pie in the fridge.
+Mmmm, nothing beats a midnight snack!
+Or...maybe you shouldn't eat pie and drink some rooibos tea instead.
+What do you prefer: rooibos or pie?",story_line,kitchen
+kitchen_pie,"That pie was delicious
+Now back to bed!"") 
+...wait...what's that sound?"")   
+Is that the attic floor creaking?"") 
+Footsteps? 
+Nooo, that's must be your imagination."")
+Or not? 
+Do you go back to bed or do you go to the attic?",story_line,kitchen
+kitchen_rooibos,"Rooibos is a herbal tea from South Africa.
+Some say it helps to improve sleep. 
+Not sure if that's true.
+But it seems to work for you.
+Sweet dreams!",story_line,kitchen
+kitchen_else,Just say Rooibos or pie.,story_line,kitchen
+kitchen_pie_attic,0,story_line,kitchen
+kitchen_pie_bed,0,story_line,kitchen
+kitchen_pie_else,Just answer bed or attic.,story_line,kitchen
+kitchen_user_input_1,pie,user_input,kitchen
+kitchen_user_input_2,rooibos,user_input,kitchen
+kitchen_user_input_pie_1,Attic,user_input,kitchen
+kitchen_user_input_pie_2,Go to attic,user_input,kitchen
+kitchen_user_input_pie_3,Bed,user_input,kitchen
+kitchen_user_input_pie_4,Go back to bed,user_input,kitchen
+bathroom,"You are in the bathroom.
+You've just flushed the toilet when you hear something falling.
+The cat is probably climbing the bookshelves again.
+Do you want to check out what your cat has done?",story_line,bathroom
+bathroom_yes,Okay let's go to the living room.,story_line,bathroom
+bathroom_no,"Okay
+Yeah, you might be right.
+It's way too early to check out what the cat is doing.
+It's time to sleep.",story_line,bathroom
+bathroom_else,Just answer yes or no. Otherwise you'll be stuck in the bathroom all night.,story_line,bathroom
+bathroom_user_input_1,yes,user_input,bathroom
+bathroom_user_input_2,no,user_input,bathroom
+attic,"A cold breeze on the attic makes your hair stand on end.
+The dusty rocking chair next to the window starts to rock back and forth.
+A thin voice whispers: this is your granny!
+Come here. Do you want to hear a story?
+Suddenly, another voice starts to speak: Don't listen to her!
+That woman is not your grandmother...
+Please, listen to me, I'm your grandfather.
+Your grandparents? Ghosts? This is getting freaky! 
+What do you do? 
+Flee or listen? 
+",story_line,attic
+attic_flee,"You run down the stairs and jump back into your bed.
+In bed you try to convince yourself this was just your imagination.
+You'll be staring at the ceiling until your alarm goes off.",story_line,attic
+attic_listen,Do you want to listen to your grandfather or your grandmother?,story_line,attic
+attic_listen_grandmother,"The creepy voice starts to recite a poem.
+---------------------------------------------- 
+ txt.read()
+---------------------------------------------- 
+This was not your beloved granny.
+This was the ghost assistant of Insomnia reciting a scary poem."")
+She helps Insomnia by keeping people awake."")       
+You run down the stairs...
+...and jump into your bed. 
+You'll be staring at the ceiling until you alarm goes off. 
+And you'll get up on the wrong side of the bed.   ",story_line,attic
+attic_listen_grandfather,"Your grandfather was a lovely man and you have to admit he's a friendly ghost.
+His story bores you to sleep, though...
+...and the other creepy voice disappeared.",story_line,attic
+attic_listen_else,Just answer granny or grandfather or you'll be stuck in this attic forever.,story_line,attic
+attic_user_input_3,flee,user_input,attic
+attic_user_input_2,listen,user_input,attic
+attic_user_input_listen_1,Grandmother,user_input,attic
+attic_user_input_listen_2,Listen to grandmother,user_input,attic
+attic_user_input_listen_3,Grandfather,user_input,attic
+attic_user_input_listen_4,Listen to grandfather,user_input,attic
+living_room,"Yes, it was the cat again.
+He is hiding behind a plant on the top shelf.
+And some of your books fell on the floor."")
+Do you pick up the books?
+Or do you go to the garden to get some fresh air? ",story_line,living_room
+living_room_books,"Your cat dropped the book 'Bedtime stories for stressed out Adults' on the floor.
+'Tales to soothe tired souls' it says, by Lucy Mangan"")
+Wow. You didn't remember you had that book.
+You take it and you go back to bed. Thanks cat!",story_line,living_room
+living_room_garden,0,story_line,living_room
+living_room_else,"Just answer garden or books, if you don't want to be stuck in the living room forever.",story_line,living_room
+living_room_user_input_1,Garden,user_input,living_room
+living_room_user_input_2,Go to garden,user_input,living_room
+living_room_user_input_3,Go to the garden,user_input,living_room
+living_room_user_input_4,Books,user_input,living_room
+living_room_user_input_4,Pick up books,user_input,living_room
+living_room_user_input,Pick up the books,user_input,living_room
+garden,"Your crazy neighbour is walking in your garden with a flashlight.
+Do you ignore the man or talk to him?    ",story_line,garden
+garden_ignore,"You ignore him.
+The man is crazy but harmless.
+Last week he saw aliens on your roof terrace. 
+He'll go back to his own place, when he gets tired.
+You'll go back to bed for a bit more sleep. ",story_line,garden
+garden_talk,"You ask your neighbour what he's doing in your garden, in the middle of the night.
+The man is crazy, but harmless.
+Last week he saw ghosts on your roof terrace. 
+{user_name}, this night I've seen a man and a woman staring through your attic's window!', he says."") 
+Pfff. You explain your neighbour that there is nobody else in the house apart from you."")
+But back in bed, you start to get a bit nervous, though.
+What if your neighbour is not crazy...",story_line,garden
+garden_els,"Just answer talk or ignore, if you don't want to be stuck in the garden forever.",story_line,garden
+garden_user_input_1,Ignore,user_input,garden
+garden_user_input_2,Ignore the man,user_input,garden
+garden_user_input_3,Ignore him,user_input,garden
+garden_user_input_4,Talk,user_input,garden
+garden_user_input_5,Talk to him,user_input,garden
+sleep_exit,You'll sleep like a baby. Insomnia lost. You won! THE END,story_line,exit
+insomnia_wins,Insomnia wins. You lose. GAME OVER,story_line,exit
