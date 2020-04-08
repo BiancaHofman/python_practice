@@ -10,12 +10,12 @@ I'm still working on some improvements in this script.
 ex36 is exercise 36 of Zed Shaw's Learn Python the Hard Way.
 For exercise 36 I had to create from scratch a game like ex35b and try to add some methods and modules from earlier exercises.
 
-This were the steps I followed:
-Step 1: general story idea ---> using my paper notebook
-Step 2: map to visualize the story flow and different functions ---> using dialog.io.
-Step 3: writing the code and testing ---> using notebook ++ and powershell
-Step 4: map to visualize more detailed story content flow for different functions ---> using dialog.oi
-Step 5: labeling the different content pieces ---> using notebook ++
-Step 6: csv sheet with overview of content pieces and their labels ---> using Google Sheets
-Step 7: testing ---> using powershell
+These were the steps I followed:
+1. general story idea ---> using my paper notebook
+2. map to visualize the story flow and different functions ---> using dialog.io.
+3. writing the code and testing ---> using notebook ++ and powershell
+4. map to visualize more detailed story content flow for different functions ---> using dialog.oi
+5. labeling the different content pieces ---> using notebook ++
+6. csv sheet with overview of content pieces and their labels ---> using Google Sheets
+7. testing ---> using powershell
 
