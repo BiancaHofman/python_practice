@@ -12,11 +12,13 @@ Exercise 36 of Zed Shaw's Learn Python the Hard Way: I had to create from scratc
 
 This was my way of working:
 1. Come up with a general story idea ---> using my paper notebook
-2. Create a map to visualize the story flow and different functions ---> using draw.io.
+2. Create a map to visualize the story flow and different functions ---> using https://www.draw.io/
 3. Write the code and testing ---> using notebook ++ and powershell
-4. Create a map to visualize detailed story content flow for different functions ---> using draw.oi
+4. Create a map to visualize detailed story content flow for different functions ---> https://www.draw.io/
 5. Label all the different content pieces ---> using notebook ++
 6. Create a csv sheet with overview of content pieces and their labels ---> using Google Sheets
 7. Test ---> using powershell
 
-Exercise 36 doesn't say you need to use mapping tools like draw.io, nor do you have to label content pieces or create an overview in Google sheets. I did this, because I like to visualize and structure the information.   
+Exercise 36 doesn't say you need to use mapping tools like https://www.draw.io/, label content pieces or create an overview in Google sheets. I did this, because I like to visualize and structure the information.   
+
+
