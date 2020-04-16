@@ -19,6 +19,10 @@ This was my way of working:
 6. Create a csv sheet with overview of content pieces and their labels ---> using Google Sheets
 7. Test ---> using powershell
 
-Exercise 36 doesn't say you need to use mapping tools like https://www.draw.io/, label content pieces or create an overview in Google sheets. I did this, because I like to visualize and structure the information.   
+Exercise 36 doesn't say you need to use mapping tools like https://www.draw.io/, label content pieces or create an overview in Google sheets. I did this, because I like to visualize and structure the information. 
+
+ex37_return_and_lambda is part of exercise 37 of Zed Shaw's Learn Python the Hard way. I'm investigating the list of Python keywords and I created a little program to understand better: 
+1. The difference between defining standard functions and the lambda keyword to create an anonymous function
+2. The difference between the return statement and print statement
 
 
